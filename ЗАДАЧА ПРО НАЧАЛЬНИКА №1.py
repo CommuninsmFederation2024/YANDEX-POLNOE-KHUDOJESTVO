@@ -10,7 +10,7 @@ class MainWindow(QMainWindow):
   g_map: QLabel
   def __init__(self):
     super().__init__()
-    uic.loadUi('main_window.ui', self)
+    uic.loadUi('untitled.ui', self)
     self.spn = 0.00001
     self.zoom = 5
     self.ll = [37.977751, 55.757718]
@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
       'l': self.typemap,
       'z': self.zoom
     }
-    response = requests.get('https://static-maps.yandex.ru/l.x/',
+    response = requests.get('http://static-maps.yandex.ru/1.x/',
                   params=map_params)
     with open('tmp.png', mode='wb') as tmp:
       tmp.write(response.content)
@@ -34,7 +34,5 @@ class MainWindow(QMainWindow):
 
 app = QApplication(sys.argv)
 main_window = MainWindow()
-main_window.show
+main_window.show()
 sys.exit(app.exec())
-  
-    
