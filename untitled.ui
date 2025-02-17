@@ -17,26 +17,15 @@
    <widget class="QLabel" name="g_map">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>140</y>
-      <width>47</width>
-      <height>13</height>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>541</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>x</string>
     </property>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>90</y>
-      <width>160</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
