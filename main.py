@@ -19,7 +19,7 @@ class MainWindow(QMainWindow):
     
   def show_map(self):
     map_params = {
-      'll': ','.join(map(str, self.ll))
+      'll': ','.join(map(str, self.ll)),
       'l': self.typemap,
       'z': self.zoom
     }
